@@ -1708,6 +1708,8 @@
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 5px;
+			background-color: rgb(255, 255, 255);
 		}
 
 		.image.avatar55 {
@@ -1945,6 +1947,9 @@
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
+		border: 5px solid rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
+		border-radius: 5px;
 	}
 
 		.item header {
