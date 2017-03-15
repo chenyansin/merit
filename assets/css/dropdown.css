@@ -22,7 +22,7 @@ html {
   transform: rotate(180deg);
 }
 .faq-list > li.open .list-content {
-  max-height: 1200px;
+  max-height: 5200px;
   -webkit-transition: max-height 0.5s ease-in;
   -moz-transition: max-height 0.5s ease-in;
   -ms-transition: max-height 0.5s ease-in;
