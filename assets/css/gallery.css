@@ -8,6 +8,7 @@ Article: http://muki.tw/tech/responsive-css3-lightbox-without-javascript/
 
 
 
+
 h2 {
   font-size: 1em;
   margin: 0 0 .5em 0;
@@ -37,7 +38,7 @@ a.button {
 .lightbox-target {
   position: fixed;
   top: -100%;
-  width: 100%;
+  width: 20%;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
   -moz-transition: opacity 0.5s ease-in-out;
@@ -45,9 +46,10 @@ a.button {
   -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   overflow: hidden;
+  z-index: 99;
 }
 .lightbox-target .content {
-  width: 90%;
+  width: 20%;
   height: 90%;
   background: #fff;
   color: #333;
@@ -107,7 +109,7 @@ a.button {
   height: 50px;
   box-sizing: border-box;
   background: #139dd7;
-  color: #fff;
+  color: red;
   position: absolute;
   top: 10%;
   right: 5%;
