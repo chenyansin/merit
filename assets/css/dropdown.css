@@ -1,0 +1,65 @@
+html {
+  color: #000;
+  line-height: 1.5;
+}
+
+
+
+.faq-list {
+  width: 90%;
+  margin: 30px auto 0;
+  list-style-type: none;
+}
+.faq-list > li {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 1px 2px 4px black inset;
+  border-radius: 5px;
+}
+.faq-list > li.open .list-header:after {
+  transform: rotate(180deg);
+}
+.faq-list > li.open .list-content {
+  max-height: 1200px;
+  -webkit-transition: max-height 0.5s ease-in;
+  -moz-transition: max-height 0.5s ease-in;
+  -ms-transition: max-height 0.5s ease-in;
+  -o-transition: max-height 0.5s ease-in;
+  transition: max-height 0.5s ease-in;
+}
+.faq-list .list-header {
+  position: relative;
+  padding: 20px 0 20px 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.faq-list .list-header:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border-style: solid;
+  border-width: 12px 6px 0 6px;
+  border-color: #757575 transparent transparent transparent;
+  -webkit-transition: transform 0.5s ease-in;
+  -moz-transition: transform 0.5s ease-in;
+  -ms-transition: transform 0.5s ease-in;
+  -o-transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+}
+.faq-list .list-content {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+  -moz-transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+  -ms-transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+  -o-transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+  transition: max-height 1s cubic-bezier(0, 1.05, 0, 1);
+}
+.faq-list .list-content-inner {
+  padding: 0 45px 30px;
+}
